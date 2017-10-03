@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  padding: 2em;
+  overflow: hidden;
+}
+
+
+img {
+  transition: all 0.9s ease-out;
+  transform: rotateY(-90deg);
+  height: 500px;
+  opacity: 0;
+}
+
+img.on {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.posts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+}
+
+p {
+  color: white; 
+  font-size: 40px; 
+  font-family: sans-serif; 
+  padding: 5px 5px 5px 5px;
+}
+
+h1 {
+  color: white; 
+  font-family: sans-serif;
+}
+
+.post-container {
+  margin: 10px;
+  float: left;
+  word-wrap: break-word;
+  max-width: 500px; 
+  
+}
+
+
