@@ -12,7 +12,7 @@ $(function () {
         var post = $([
             '<div class="post-container">',
             '   <img class="image-wrapper" src="' + image.imageURL + '">',
-            '   <h1>From: ' + phoneNumber + '</h1>',            
+            '   <h2>From: ' + phoneNumber + '</h2>',            
             '   <p>' + caption + '</p>',
             '</div>'
 
