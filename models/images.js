@@ -3,7 +3,7 @@ require("dotenv").config();
 
 var request = require('request');
 
-const URL = 'https://calhack-pubsub-test.azurewebsites.net/images';  
+const URL = 'http://104.214.27.240:3000/images';  
 
 // const URL = 'http://localhost:8000/images' 
 /** 
