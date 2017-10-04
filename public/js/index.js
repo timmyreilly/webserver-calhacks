@@ -9,16 +9,28 @@ $(function () {
         var caption = image.caption || "no caption";
         var imageURL = image.imageURL || "https://i.imgur.com/KVa2yxB.png"
 
-        var post = $([
-            '<div class="post-container">',
-            '   <img class="image-wrapper" src="' + image.imageURL + '">',
-            '   <h2>From: ' + phoneNumber + '</h2>',            
-            '   <p>' + caption + '</p>',
+        var galleryItem = $([
+            '<div class="gallery__item">',
+            '   <div class="gallery__container">',
+            '       <img class="gallery__image" src="' + imageURL  + '">',
+            '       <h2 class="gallery__content">From: ' + phoneNumber + '</h2>', 
+            '       <p class="gallery__content">' + caption + '</p>', 
+            '   </div>',
             '</div>'
+        ].join("\n")); 
 
-        ].join("\n"));
+        $('.gallery').prepend(galleryItem); 
 
-        $('.posts').prepend(post);
+        // var post = $([
+        //     '<div class="post-container">',
+        //     '   <img class="image-wrapper" src="' + image.imageURL + '">',
+        //     '   <h2>From: ' + phoneNumber + '</h2>',            
+        //     '   <p>' + caption + '</p>',
+        //     '</div>'
+
+        // ].join("\n"));
+
+        // $('.posts').prepend(post);
 
         // setTimeout(function () {
         //     post.addClass('on');
@@ -26,6 +38,7 @@ $(function () {
 
         setTimeout(function(){
             $(".image-wrapper").addClass('on'); 
+            $(".gallery__image").addClass('on'); 
         }, 0); 
     });
 });
