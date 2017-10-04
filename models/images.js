@@ -7,7 +7,7 @@ var request = require('request');
  */
 
  exports.get = function(callback){
-     request('http://localhost:8000/images', function(err, response, body){
+     request('https://calhack-pubsub-test.azurewebsites.net/images', function(err, response, body){
          callback(err, JSON.parse(body));
      });
  }

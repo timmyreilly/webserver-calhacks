@@ -1,6 +1,9 @@
 {
   "name": "webserver-calhacks",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.5.0"
+  },
   "description": "Web Server for CalHacks Demo",
   "main": "app.js",
   "scripts": {

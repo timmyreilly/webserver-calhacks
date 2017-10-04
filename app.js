@@ -8,7 +8,7 @@ var io = require('socket.io').listen(server);
 var subSocket = require('./lib/subscribe'); 
 var images = require('./models/images')
 
-server.listen(3000, function(){
+server.listen(process.env.PORT || 3000, function(){
     console.log("server is running on port %d", 3000);
 });
 
