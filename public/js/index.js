@@ -13,7 +13,7 @@ $(function () {
             '<div class="gallery__item">',
             '   <div class="gallery__container">',
             '       <img class="gallery__image" src="' + imageURL  + '">',
-            '       <h2 class="gallery__content">From: ' + phoneNumber + '</h2>', 
+            '       <h2 class="gallery__content">From: (###) ### - ' + phoneNumber + '</h2>', 
             '       <p class="gallery__content">' + caption + '</p>', 
             '   </div>',
             '</div>'
